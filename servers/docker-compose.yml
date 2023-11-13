@@ -1,0 +1,22 @@
+version: '2'
+services:
+  postgres:
+    image: 'postgres:latest'
+    restart: always
+    volumes:
+      - 'postgres_data:/var/lib/postgresql/data'
+    environment:
+      - POSTGRES_PASSWORD=postgres_demo
+    ports:
+      - '5432:5432'
+
+  redis:
+    image: redis:6.2-alpine
+    container_name: myRedis
+    restart: always
+    ports:
+      - '6379:6379'
+    command: redis-server --loglevel warning
+
+volumes:
+  postgres_data:
