@@ -31,3 +31,7 @@ Se ha agregado Swagger al proyecto para poder documentar y probar la API desde e
 accediendo a la siguiente url: http://localhost:8080/doc/swagger-ui.html
 
 ![Swagger image](/swagger_example.png)
+
+### Postman
+Se ha creado una colección de Postman para poder probar el servicio.
+Está disponible en el fichero `EasyDevel Demo.postman_collection.json`

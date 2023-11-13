@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "bf5d073a-c219-486d-a1e6-4c59be3595ed",
+		"name": "EasyDevel Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9023938"
+	},
+	"item": [
+		{
+			"name": "Get All Sections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/section",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"section"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Section",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Michael Jordan\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/section",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"section"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Section",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/section/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"section",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify Section",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Larry Bird\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/section/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"section",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Section",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/section/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"section",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
